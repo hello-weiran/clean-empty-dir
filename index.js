@@ -7,16 +7,18 @@
  * @author weiran <https://github.com/aladdin-add>
  */
 
-const init = require('./utils/init');
+const clean = require('./utils/clean-empty-dir');
 const cli = require('./utils/cli');
 const log = require('./utils/log');
 
-const input = cli.input;
+// by defalut, just clean the cwd.
+const input = cli.input.length ? cli.input : [process.cwd()];
 const flags = cli.flags;
-const { clear, debug } = flags;
+const { debug } = flags;
 
 (async () => {
-	init({ clear });
+	const emptyDirs = clean(input);
+	log('successfully cleaned empty dirs: ', emptyDirs.join('\n'));
 	input.includes(`help`) && cli.showHelp(0);
 
 	debug && log(flags);
