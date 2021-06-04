@@ -1,4 +1,4 @@
-# clean-emplty-dir
+# clean-empty-dir
 
 > one command to clean all empty dirs recursively.
 
