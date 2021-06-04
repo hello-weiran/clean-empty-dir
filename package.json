@@ -1,6 +1,6 @@
 {
 	"name": "clean-empty-dir",
-	"description": "a command to clean all the empty dirs.",
+	"description": "one command to clean all empty dirs recursively.",
 	"version": "0.0.1",
 	"license": "MIT",
 	"main": "./utils/clean-empty-dir.js",
@@ -11,6 +11,9 @@
 		"name": "weiran",
 		"email": "weiran.zsd@outlook.com",
 		"url": "https://github.com/aladdin-add"
+	},
+	"repository": {
+		"url": "https://github.com/hello-weiran/clean-empty-dir"
 	},
 	"keywords": [
 		"clean-empty-dir",

@@ -1,6 +1,6 @@
 # clean-emplty-dir
 
-> one command to clean empty dirs recursively.
+> one command to clean all empty dirs recursively.
 
 # usage
 ```bash
